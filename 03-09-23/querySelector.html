@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document Object Model</h1> <!--Document Object Model -->
+    <h1 id="js">java-script</h1> <!--java-script-->
+    <h1 class="fw">Spring</h1> <!--Spring-->
+    <h1 class="fw">Hibernate</h1> <!--Hibernate-->
+
+    <script>
+        var ele1=document.querySelector("h1, #js, .fw")
+        //document- Root-Tag to create Document-Object-Tree-Model on the Browser after loading the Code onto the Browser
+        var ele2=document.querySelector("#js, h1, .fw")
+        //.-operator- to enter or to access the Object
+        var ele3=document.querySelector(".fw, h1, #js")
+        //querySelector()- the function returns the 1st HTML element invoked(based on HTML)
+
+        console.log(ele1)//<h1>Document Object Model</h1>
+        console.log(ele2)//<h1>Document Object Model</h1>
+        console.log(ele3)//<h1>Document Object Model</h1>
+    </script>
+</body>
+</html>

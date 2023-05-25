@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. creating Array using Array-Literals
+        var object=[12, 34.89, "JS", true, null, 56,,]
+        console.log(object)
+        document.write(object)
+
+        //2. new Keyword
+        var num=new Array()
+        num[0]=78
+        num[1]="JS"
+        num[2]=true
+        num[99]="JAVA"
+        console.log(num)
+        console.log(num[9000])//undefined
+        console.log(num[89])//undefined
+        console.log(num.length)//100
+
+        //3. Constructor
+        var x=new Array(10, 20, 30, 40, 50)
+        console.log(x)
+    </script>
+</body>
+</html>

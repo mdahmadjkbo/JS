@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectLiteral2.html</title>
+</head>
+<body>
+    <script>
+        let employee=[
+            {name:"M. D.",
+            salary:12345,
+            address:{
+                state:"Karnataka",
+                city:"Bengaluru",
+                pin:123456}
+            },
+            {name:"D. O.",
+            salary:123456,
+            address:{
+                state:"Karnataka",
+                city:"Mysore",
+                pin:123789}
+            },
+            {name:"ABC",
+            salary:1234567,
+            address:{
+                state:"Tamil Nadu",
+                city:"Chennai",
+                pin:123987}
+            }
+        ]
+
+        console.table(employee)
+        console.table(employee[2])
+    </script>
+</body>
+</html>

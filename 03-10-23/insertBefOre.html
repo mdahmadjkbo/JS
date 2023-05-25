@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ultag">
+        <li>sql</li>
+        <li>mongo db</li>
+        <li>my sql</li>
+        <li id="nosql">no sql</li>
+    </ul>
+    <button onclick="x()" ondblclick="y()">Add Element</button>
+
+    <script>
+        function x(){
+            var litag= document.createElement("li")
+            litag.textContent="pl sql"
+            // var ultag= document.getElementById("ultag")
+            var nosql= document.getElementById("nosql")
+            var ultag= document.getElementById("ultag")
+            ultag.insertBefore(litag, nosql)}
+
+        function y(){
+            location.reload()}
+    </script>
+</body>
+</html>

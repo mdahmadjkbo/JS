@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=[10, 20, 40, 50, 70]
+        document.write(x+"<br>")//10, 20, 40, 50, 70
+
+        //1. push()- the Inbuilt-method adds Array-elements at the end of the Array
+        x.push(90, 30)
+        document.write(x+"<br>")//10, 20, 40, 50, 70, 90, 30
+
+        //2. unshift()- adds elements at starting of the Array
+        x.unshift(1, 2, 3)
+        document.write(x+"<br>")//1, 2, 3, 10, 20, 40, 50, 70, 90, 30
+
+        //3. pop()- removes only 1 data from end of the array
+        document.write("Popped element->"+x.pop()+"<br>")//Popped element->30
+        document.write(x+"<br>")
+        x.pop()
+        document.write(x+"<br>")//1, 2, 3, 10, 20, 40, 50, 70
+
+        //4. shift()- removes single element from starting
+        document.write("Shifted Element->"+x.shift()+"<br>")
+        document.write(x+"<br>")
+        x.shift()
+        document.write(x+"<br>")
+
+        //5. reverse()- reverse the Array
+        document.write("Reversed Array: "+x.reverse()+"<br>")
+        document.write(x+"<br>")
+
+        //6. sort()- sorts Array elements in ascending order
+        x.sort()
+        document.write("Sorted-Array: "+x.sort()+"<br>")
+        console.log(x)
+        // document.write(sort([10, 3, 50, 100]))
+
+    </script>
+</body>
+</html>

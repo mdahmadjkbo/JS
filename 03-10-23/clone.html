@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="ultag">
+            <li>java</li>
+            <li>java-script</li>
+            <li>react-js</li>
+            <li>dom</li>
+            <li>node-js</li>
+        </ul>
+    </div>
+    <div>
+
+    </div>
+    <button onclick="x()" ondblclick="y()" >Copy Data</button>
+
+    <script>
+        function x(){
+        //targeting html element
+        var ultag= document.getElementById("ultag")
+        var div= document.getElementsByTagName("div")//both the <div>s will be stored in the form of HTMLCollection
+
+        //create clone node of html element
+        var cloneUl= ultag.cloneNode(true)
+
+        div[1].appendChild(cloneUl)
+        console.log(cloneUl)}
+
+        function y(){
+            document.location.reload()}
+    </script>
+</body>
+</html>

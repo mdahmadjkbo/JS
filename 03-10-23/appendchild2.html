@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- By using HTML -->
+    <ul><!--unordered list-->
+        <li>java</li>
+        <li>js</li>
+        <li>dom</li>
+        <li>react</li>
+        <li>node</li>
+    </ul>
+    <script>
+        // create ul html element
+        var ul=document.createElement("ul")
+        console.log(ul)
+
+        // create li html elements
+        var li1=document.createElement("li")
+        var li2=document.createElement("li")
+        var li3=document.createElement("li")
+        var li4=document.createElement("li")
+        var li5=document.createElement("li")
+
+        // adding text inside created html li elements
+        li1.textContent="java"
+        li2.textContent="js"
+        li3.innerHTML="dom"
+        li4.innerHTML="react"
+        li5.textContent="node"
+
+        // adding li elements inside ul element
+        ul.appendChild(li1)//already present in <script>.So no need to go into document-root-folder
+        ul.appendChild(li2)
+        ul.appendChild(li3)
+        ul.appendChild(li4)
+        ul.appendChild(li5)
+        // ul.appendChild(li1)
+
+        console.log(ul)
+        //adding ul element inside body tag
+        document.body.appendChild(ul)//as <script> is not in <body>/document. So we should go into document & then dumping into <body>
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML</h1>
+    <h1 id="BOX">CSS</h1>
+    <h1 id="BOX1">React</h1>
+    <h1>Java Script</h1>
+    <h3>JAVA</h3>
+    <h3>Python</h3>
+    <h1>Node JS</h1>
+    <h1>Metero JS</h1>
+    <!-- <button onclick="applyColor">Apply Color</button> -->
+    <button onclick="applyColor()">Apply Color</button>
+    <!-- Below Properties are applied onClick the Apply Color-button(applyColor()) by using JS -->
+    <script>
+        // var applyColor=()=>{
+        function applyColor(){
+        var tag=document.getElementsByTagName("h1")
+        console.log(tag)
+        tag[0].style.color="red"
+        tag[1].style.color="blue"
+        tag[3].style.textAlign="center"
+        tag[4].style.border="20px solid green"}
+    </script>
+</body>
+</html>
